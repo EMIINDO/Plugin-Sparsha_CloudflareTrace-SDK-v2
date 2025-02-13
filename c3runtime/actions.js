@@ -1,6 +1,7 @@
 "use strict";
 {
-    globalThis.C3.Plugins.Sparsha_CloudflareTrace.Acts = {
+    const C3 = globalThis.C3;
+    C3.Plugins.Sparsha_CloudflareTrace.Acts = {
         FetchData()
         {
             var self = this;
