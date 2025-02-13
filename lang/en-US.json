@@ -1,0 +1,94 @@
+{
+  "languageTag": "en-US",
+  "fileDescription": "Strings for Cloadflare Trace Plugin",
+  "text": {
+    "plugins": {
+      "sparsha_cloudflaretrace": {
+        "name": "Cloadflare Trace",
+        "description": "Get IP Address, Country, Timestamp. Extra: CountryFlag, Calling Code, Currency, Language",
+        "help-url": "https://www.constructfirebase.com/",
+        "properties": {},
+        "aceCategories": {
+          "cloudflare": "Cloudflare CDN-CGI Trace"
+        },
+        "conditions": {
+          "on-fetch": {
+            "list-name": "On Fetch",
+            "display-text": "On Fetch",
+            "description": "Triggered when data is successfully fetched."
+          },
+          "on-error": {
+            "list-name": "On Error",
+            "display-text": "On Error",
+            "description": "Triggers when there is an error while fetching data."
+          }
+        },
+        "actions": {
+          "fetch-data": {
+            "list-name": "Fetch data",
+            "display-text": "Fetch data",
+            "description": "Starts fetching Cloudflare data."
+          }
+        },
+        "expressions": {
+          "hostname": {
+            "translated-name": "hostname",
+            "description": "Get Hostname"
+          },
+          "uri_scheme": {
+            "translated-name": "uri_scheme",
+            "description": "Get URI scheme- the portion of URL before ://"
+          },
+          "userAgent": {
+            "translated-name": "userAgent",
+            "description": "Get User Agent"
+          },
+          "ip_address": {
+            "translated-name": "ip_address",
+            "description": "Get IP Address"
+          },
+          "timestamp": {
+            "translated-name": "timestamp",
+            "description": "Get UNIX Timestamp (Server Time)"
+          },
+          "dataCenter": {
+            "translated-name": "dataCenter",
+            "description": "Get Datacenter Location that handled the request"
+          },
+          "http_version": {
+            "translated-name": "http_version",
+            "description": "Get HTTP version"
+          },
+          "tls_version": {
+            "translated-name": "tls_version",
+            "description": "Get TLS version"
+          },
+          "country": {
+            "translated-name": "country",
+            "description": "Get Country"
+          },
+          "warpStatus": {
+            "translated-name": "warpStatus",
+            "description": "Get Cloudflare Warp status."
+          },
+          "sni": {
+            "translated-name": "sni",
+            "description": "Get Server Name Indication"
+          },
+          "gatewayStatus": {
+            "translated-name": "gatewayStatus",
+            "description": "Get Cloudflare Gateway Status"
+          },
+          "serverInstance": {
+            "translated-name": "serverInstance",
+            "description": "Get the Cloudflare server instance that handled the request"
+          },
+          "gatewayAccountId": {
+            "translated-name": "gatewayAccountId",
+            "description": "Get Cloudflare Gateway Account Id"
+          }
+        }
+      }
+    }
+  }
+}

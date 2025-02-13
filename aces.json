@@ -1,0 +1,97 @@
+{
+  "cloudflare": {
+    "conditions": [
+      {
+        "id": "on-fetch",
+        "scriptName": "OnFetch",
+        "highlight": false,
+        "isTrigger": true
+      },
+      {
+        "id": "on-error",
+        "scriptName": "OnError",
+        "highlight": false,
+        "isTrigger": true
+      }
+    ],
+    "actions": [
+      {
+        "id": "fetch-data",
+        "scriptName": "FetchData",
+        "highlight": false
+      }
+    ],
+    "expressions": [
+      {
+        "id": "hostname",
+        "expressionName": "hostname",
+        "returnType": "string"
+      },
+      {
+        "id": "uri_scheme",
+        "expressionName": "uri_scheme",
+        "returnType": "string"
+      },
+      {
+        "id": "userAgent",
+        "expressionName": "userAgent",
+        "returnType": "string"
+      },
+      {
+        "id": "ip_address",
+        "expressionName": "ip_address",
+        "returnType": "string"
+      },
+      {
+        "id": "timestamp",
+        "expressionName": "timestamp",
+        "returnType": "number"
+      },
+      {
+        "id": "dataCenter",
+        "expressionName": "dataCenter",
+        "returnType": "string"
+      },
+      {
+        "id": "http_version",
+        "expressionName": "http_version",
+        "returnType": "string"
+      },
+      {
+        "id": "tls_version",
+        "expressionName": "tls_version",
+        "returnType": "string"
+      },
+      {
+        "id": "country",
+        "expressionName": "country",
+        "returnType": "string"
+      },
+      {
+        "id": "warpStatus",
+        "expressionName": "warpStatus",
+        "returnType": "string"
+      },
+      {
+        "id": "sni",
+        "expressionName": "sni",
+        "returnType": "string"
+      },
+      {
+        "id": "gatewayStatus",
+        "expressionName": "gatewayStatus",
+        "returnType": "string"
+      },
+      {
+        "id": "serverInstance",
+        "expressionName": "serverInstance",
+        "returnType": "string"
+      },
+      {
+        "id": "gatewayAccountId",
+        "expressionName": "gatewayAccountId",
+        "returnType": "string"
+      }
+    ]
+  }
+}
